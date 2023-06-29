@@ -1,0 +1,25 @@
+# helix 的基本配置 config.toml
+# 语言支持 languages.toml
+
+theme = "nord" # 设置主题
+
+[editor]
+line-number = "relative" # 设置行数为相对
+mouse = false # 禁用鼠标
+
+[editor.cursor-shape]
+insert = "bar" # 设置插入模式时光标为 bar
+normal = "block" # 设置正常状态下光标为 block
+select = "underline" # 设置选择状态下光标为 underline
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "file-name"]
+# center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = " NORMAL "
+mode.insert = " INSERT "
+mode.select = " SELECT "
