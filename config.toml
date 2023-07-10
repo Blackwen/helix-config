@@ -5,7 +5,10 @@ theme = "nord" # 设置主题
 
 [editor]
 line-number = "relative" # 设置行数为相对
-mouse = false # 禁用鼠标
+bufferline = "multiple" # 当缓冲区超过一个，显示缓冲区
+cursorline = true
+cursorcolumn = true
+mouse = true # 启用鼠标
 
 [editor.cursor-shape]
 insert = "bar" # 设置插入模式时光标为 bar
@@ -20,6 +23,12 @@ left = ["mode", "file-name"]
 # center = ["file-name"]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
-mode.normal = " NORMAL "
-mode.insert = " INSERT "
-mode.select = " SELECT "
+mode.normal = "  NOR "
+mode.insert = "  INS "
+mode.select = "  SEL "
+
+[editor.indent-guides] # 缩进配置
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
