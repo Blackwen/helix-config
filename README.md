@@ -1,5 +1,5 @@
 # My helix-config
-###[Bilibili配置教程](https://www.bilibili.com/video/BV1xP411C7DE/?share_source=copy_web&vd_source=c69478cf03b3324dada2cbb518168f3f)
+### Bilibili配置教程](https://www.bilibili.com/video/BV1xP411C7DE/?share_source=copy_web&vd_source=c69478cf03b3324dada2cbb518168f3f)
 
 
 ## Use this configuration on your linux.
