@@ -1,34 +1,37 @@
 # helix 的基本配置 config.toml
-# 语言支持 languages.toml
+# 自定义主题位于 themes/
 
-theme = "nord" # 设置主题
+theme = "everforest_dark" # 设置主题
 
 [editor]
 line-number = "relative" # 设置行数为相对
-bufferline = "multiple" # 当缓冲区超过一个，显示缓冲区
+bufferline = "always" # 当缓冲区超过一个，显示缓冲区
 cursorline = true
-cursorcolumn = true
+cursorcolumn = false
 mouse = true # 启用鼠标
+color-modes = true # 通过状态设定颜色
+gutters = ["diagnostics", "line-numbers", "spacer"]
+auto-info = false # 关闭提示
+true-color = true
 
 [editor.cursor-shape]
-insert = "bar" # 设置插入模式时光标为 bar
+insert = "block" # 设置插入模式时光标为 bar
 normal = "block" # 设置正常状态下光标为 block
-select = "underline" # 设置选择状态下光标为 underline
+select = "block" # 设置选择状态下光标为 underline
 
 [editor.file-picker]
 hidden = false
 
 [editor.statusline]
-left = ["mode", "file-name"]
-# center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+left = ["mode", "spinner","file-name"]
+# center = [""]
+right = [ "file-type"]
 separator = "│"
-mode.normal = "  NOR "
-mode.insert = "  INS "
-mode.select = "  SEL "
+mode.normal = " 󱓻  NORMAL"
+mode.insert = " 󱨇  INSERT"
+mode.select = " 󱓼  SELECT"
 
 [editor.indent-guides] # 缩进配置
 render = true
 character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
-
